@@ -8,3 +8,30 @@ body {
 
 /* ---------------------------------------------------- */
 
+.kalendar{
+	display: grid;
+	grid-template-rows: repeat(6, 50px);
+	grid-template-columns: repeat(7, 50px);
+	list-style: none;
+	padding: 0;
+	gap: 1px;
+}
+
+
+li{
+	border: 1px solid silver;
+	text-align: center;
+	line-height: 48px;
+	/* Musím si být jistá, že je to jen jeden řádek textu, pokud ne, je třeba použít flex-box - display: flex; justify-content: center; align-items: center; */
+}
+
+.predchozi, .nasledujici{
+	color: grey;
+	background-color: lightgrey;
+	border: 1px solid white;
+}
+
+.zahlavi{
+	color: white;
+	background-color: coral;
+}
